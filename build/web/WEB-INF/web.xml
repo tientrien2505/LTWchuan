@@ -9,6 +9,10 @@
         <servlet-name>UploadServlet</servlet-name>
         <servlet-class>servlet.UploadServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GiaoVuServlet</servlet-name>
+        <servlet-class>servlet.GiaoVuServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>studyWeb</servlet-name>
         <url-pattern>/studyweb</url-pattern>
@@ -21,6 +25,15 @@
     <servlet-mapping>
         <servlet-name>library</servlet-name>
         <url-pattern>/library</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>profile</servlet-name>
+        <jsp-file>/profile/profile.jsp</jsp-file>
+    </servlet>
+    <!--mapping-->
+    <servlet-mapping>
+        <servlet-name>profile</servlet-name>
+        <url-pattern>/profile</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>viewWork</servlet-name>
@@ -77,6 +90,10 @@
     <servlet-mapping>
         <servlet-name>UploadServlet</servlet-name>
         <url-pattern>/UploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GiaoVuServlet</servlet-name>
+        <url-pattern>/GiaoVuServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

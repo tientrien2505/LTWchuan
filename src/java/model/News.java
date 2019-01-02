@@ -120,7 +120,7 @@ public class News {
                     news.setImage(getString(image, lii));
                     news.setTitle(getString(title, lii));
                     news.setContent(getString(content, lii));
-                    System.out.println(lii.attr("id").substring(6));
+//                    System.out.println(lii.attr("id").substring(6));
                     SimpleDateFormat format = new SimpleDateFormat("yyyyMMddhhmm");
                     Date date = format.parse(lii.attr("id").substring(6, 18));
                     news.setTime(new Timestamp(date.getTime()));

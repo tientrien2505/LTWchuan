@@ -48,7 +48,7 @@
         %>
         <header id="header">
             <div class ="wrap">
-                <div id="logo"></div><% //
+                <a href="home"><div id="logo"></div></a><% //
                     if (i == 0) {%>
                 <div id="profile" class="text">Sign In</div>
                 <% } else {%>
@@ -103,12 +103,13 @@
                                         ex.printStackTrace();
                                         response.getWriter().write(ex.toString());
                                     }
-                                    for (int j =0; j < listMH.size(); j++){
+                                    for (int j = 0; j < listMH.size(); j++) {
                                         String tmp = listMH.get(j);
                             %>
 
                             <li title="<%=tmp%>"><a href='studyweb?id=<%=listMa[j]%>&bai=bai1'><%=tmp%></a></li>
-                                <%}} else {%>
+                                <%}
+                                } else {%>
                             <!--<li title="study C"><a href='home'>STUDY WEB</a></li>-->
                             <%}%>
                             <!--<li title="study java"><a href="#">STUDY JAVA</a></li>-->
@@ -124,7 +125,7 @@
                     <li><a href ='home'>View Work</a></li>
                         <%}%>
                     <li title="profile">
-                        <a href="profile.html">Profile</a>
+                        <a href="profile">Profile</a>
                     </li>
                 </ul>
             </nav>
@@ -160,4 +161,12 @@
                     </div>
                 </form>
             </div>
+        </div>
+        <div id="linkTat">
+            <a href="home"><div class="linkTat"><img src="./images/home.png"></div></a>
+            <a href="https://www.facebook.com/groups/CnttandAttt/" target="blank"><div class="linkTat"><img src="./images/faceLogo.png"></div></a>
+            <a href="http://qldt.ptit.edu.vn/" target="blank"><div class="linkTat linkTat2"><img src="./images/ptit.png"></div></a>
+        </div>
+        <div id="linkTop">
+            <a href="#listNews"><img src="./images/arrow.png"></a>
         </div>

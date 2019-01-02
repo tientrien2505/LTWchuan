@@ -11,7 +11,7 @@
                 <%FileDAO fileDAO = new FileDAO("LapTrinhWeb", "sa", "1");
                     ArrayList<model.File> listFile = fileDAO.getListFile();
                     for (int i = 0; i < listFile.size(); i++) {%>
-                    <div><a href="<%=listFile.get(i).getLink()%>" target='blank'><%=listFile.get(i).getFileName()%></a></div>
+                    <div><a href="<%=listFile.get(i).getLink()%>" target='blank'><img src="./images/file_symbol.png"><div><%=listFile.get(i).getFileName()%></div></a></div>
                 <%}
                 %>
             </div>

@@ -25,7 +25,7 @@ $(document).ready(function () {
         for (var i = 0; i < soBai; i++) {
             var tenBai = document.createElement("div");
             tenBai.setAttribute("href","studyweb?id="+id+"&bai=bai"+(i+1));
-            tenBai.innerHTML = "<a href='studyweb?id="+id+"&bai=bai"+(i+1)+"'>"+"bai " + (i+1)+"</a>";
+            tenBai.innerHTML = "<a class='linkGiaoVu timeGiaoVu' href='studyweb?id="+id+"&bai=bai"+(i+1)+"'>"+"bai " + (i+1)+"</a>";
             $("aside:first").append(tenBai);
         }
         var content = document.createElement("div");
