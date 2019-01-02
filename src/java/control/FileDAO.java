@@ -46,7 +46,7 @@ public class FileDAO {
     }
 
     public void insertFile(model.File file) {
-            String query = "INSERT INTO [dbo].[File] ([fileName],[link],[type]) values" + "(?,?,?)";
+            String query = "INSERT INTO [dbo].[document] ([fileName],[link],[type]) values" + "(?,?,?)";
         try {
             pstm = conn.prepareStatement(query);
             String fileName = file.getFileName();
@@ -63,7 +63,7 @@ public class FileDAO {
     
     public ArrayList<model.File> getListFile(){
         ArrayList<model.File> listFile = new ArrayList<>();
-        String query = "SELECT TOP 100 * FROM [dbo].[File] ORDER BY id DESC";
+        String query = "SELECT TOP 100 * FROM [dbo].[document] ORDER BY id DESC";
         try {
             stm = conn.createStatement();
             ResultSet rs = stm.executeQuery(query);
